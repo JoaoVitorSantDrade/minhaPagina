@@ -1,13 +1,17 @@
 import i18next from 'i18next';
 import { createI18nStore } from 'svelte-i18next';
 
+import enTranslations from './locales/en.json';
+import ptTranslations from './locales/pt-br.json';
+
 i18next.init({
-	lng: 'pt-br',
+	lng: 'pt_br',
 	resources: {
-		pt: {
-			translation: {
-				key: 'hello world'
-			}
+		pt_br: {
+			translation: ptTranslations
+		},
+		en: {
+			translation: enTranslations
 		}
 	},
 	interpolation: {

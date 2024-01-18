@@ -1,0 +1,12 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "about": "Sobre mim",
+    "contact": "Contato",
+    "portfolio": "Portfólio",
+    "flags": {
+      "brazil": "Alterar idioma para português do Brasil",
+      "us": "Alterar idioma para o Inglês Americano"
+    }
+  }
+}

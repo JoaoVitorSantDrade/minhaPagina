@@ -1,0 +1,12 @@
+{
+  "navbar": {
+    "about": "About",
+    "contact": "Contact",
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "flags": {
+      "brazil": "Change language to Brazilian Portuguese",
+      "us": "Change language to American English"
+    }
+  }
+}
