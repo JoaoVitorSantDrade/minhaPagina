@@ -20,7 +20,7 @@
 			><img src="./src/lib/assets/flags/uk.svg" height="20px" width="30px" alt="United States" />
 		</button>
 	</div>
-	<div class="flex flex-row justify-around p-4 gap-8">
+	<div class="flex flex-row p-4 gap-8 item">
 		<a class="btn hover:variant-ghost-primary" href="/">{$i18n.t('navbar.home')}</a>
 
 		<a class="btn hover:variant-ghost-primary" href="/about">{$i18n.t('navbar.about')}</a>
@@ -32,7 +32,6 @@
 		<a class="btn px-0" target="_blank" href="https://github.com/JoaoVitorSantDrade"
 			><kbd class="kbd">Github</kbd></a
 		>
-
 		<a
 			class="btn px-0"
 			target="_blank"
