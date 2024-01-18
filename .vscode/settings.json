@@ -1,7 +1,5 @@
 {
-	"prettier.documentSelectors": [
-		"**/*.svelte"
-	],
+	"prettier.documentSelectors": ["**/*.svelte"],
 	"tailwindCSS.classAttributes": [
 		"class",
 		"accent",
@@ -116,5 +114,15 @@
 		"transition",
 		"width",
 		"zIndex"
-	]
+	],
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	  },
+	"i18n-ally.translate.promptSource": true,
+	"i18n-ally.sourceLanguage": "pt-br",
+	"i18n-ally.localesPaths": [
+		"../minhaPagina/static/locales"
+	],
+	"i18n-ally.keystyle": "nested",
+	"i18n-ally.pathMatcher": "{locale}.json",
 }
