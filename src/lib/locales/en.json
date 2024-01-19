@@ -8,5 +8,10 @@
       "brazil": "Change language to Brazilian Portuguese",
       "us": "Change language to American English"
     }
+  },
+  "portfolio": {
+    "card": {
+      "about": "See more"
+    }
   }
 }

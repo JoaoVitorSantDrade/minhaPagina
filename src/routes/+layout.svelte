@@ -11,7 +11,7 @@
 	import Header from '$lib/components/header.svelte';
 </script>
 
-<AppShell>
+<AppShell regionPage="pt-20 px-12 2xl:px-32">
 	<svelte:fragment slot="header"><Header /></svelte:fragment>
 	<svelte:fragment><slot /></svelte:fragment>
 </AppShell>

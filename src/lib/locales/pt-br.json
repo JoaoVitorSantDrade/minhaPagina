@@ -8,5 +8,10 @@
       "brazil": "Alterar idioma para português do Brasil",
       "us": "Alterar idioma para o Inglês Americano"
     }
+  },
+  "portfolio": {
+    "card": {
+      "about": "Saiba mais"
+    }
   }
 }
