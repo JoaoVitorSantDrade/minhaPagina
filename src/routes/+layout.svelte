@@ -7,6 +7,7 @@
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
 	import { AppShell, storePopup } from '@skeletonlabs/skeleton';
 	storePopup.set({ computePosition, autoUpdate, flip, shift, offset, arrow });
+	import { SpeedInsights } from '@vercel/speed-insights/next';
 
 	import Header from '$lib/components/header.svelte';
 </script>

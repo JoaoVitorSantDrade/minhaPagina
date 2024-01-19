@@ -43,6 +43,7 @@
   "type": "module",
   "dependencies": {
     "@floating-ui/dom": "1.5.4",
+    "@vercel/speed-insights": "^1.0.5",
     "drizzle-orm": "^0.29.3",
     "i18next": "^23.7.16",
     "postgres": "^3.4.3",

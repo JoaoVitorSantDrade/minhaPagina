@@ -17,3 +17,4 @@
 		></ProjectCard>
 	{/each}
 </div>
+<SpeedInsights />
