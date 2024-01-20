@@ -1,7 +1,7 @@
-import { drizzle as old_drizzle } from 'drizzle-orm/postgres-js';
+import { drizzle } from 'drizzle-orm/postgres-js';
 import postgres from 'postgres';
 
-// import 'dotenv/config';
+import 'dotenv/config';
 
 const conString = process.env.POSTGRES_URL;
 
@@ -11,5 +11,5 @@ export const migrationConnection = postgres(conString!, {
 
 const queryClient = postgres(conString!);
 
-export const migrationClient = old_drizzle(migrationConnection);
-export const conn = old_drizzle(queryClient);
+export const migrationClient = drizzle(migrationConnection);
+export const conn = drizzle(queryClient);
