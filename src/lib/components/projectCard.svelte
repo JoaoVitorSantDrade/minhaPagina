@@ -13,7 +13,7 @@
 	<div class="card p-4 card-hover">
 		<header class="card-header relative">
 			<h1 class="text-4xl py-1 font-bold whitespace-nowrap truncate">{projeto.name}</h1>
-			<div class="relative top-0 flex flex-row gap-2 items-start whitespace-nowrap overflow-auto">
+			<div class="relative pt-2 top-0 flex flex-row gap-2 items-start grid-cols-3 overflow-auto">
 				<ButtonExterior href={projeto.github}>Github</ButtonExterior>
 				{#each tech as tech_stack (tech_stack.id)}
 					<ButtonExterior href={tech_stack.link}>{tech_stack.name}</ButtonExterior>

@@ -12,7 +12,9 @@ const queryClient = postgres(conString, {
 	user: import.meta.env.VITE_POSTGRES_USER,
 	password: import.meta.env.VITE_POSTGRES_PASSWORD,
 	host: import.meta.env.VITE_POSTGRES_HOST,
-	ssl: import.meta.env.VITE_POSTGRES_SSL
+	ssl: import.meta.env.VITE_POSTGRES_SSL,
+	connect_timeout: 60 * 10,
+	idle_timeout: 60 * 10
 });
 
 export const conn = drizzle(queryClient);
