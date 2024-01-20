@@ -1,13 +1,13 @@
-// import { drizzle } from 'drizzle-orm/postgres-js';
-// import postgres from 'postgres';
+import { drizzle as old_drizzle } from 'drizzle-orm/postgres-js';
+import postgres from 'postgres';
 
 // import 'dotenv/config';
 
-// const conString = process.env.POSTGRES_URL!;
+const conString = process.env.POSTGRES_URL!;
 
-// export const migrationConnection = postgres(conString, {
-// 	max: 1
-// });
+export const migrationConnection = postgres(conString, {
+	max: 1
+});
 
 // export const queryClient = postgres(conString, {
 // 	host: process.env.POSTGRES_HOST,
@@ -17,7 +17,7 @@
 // });
 
 // export const conn = drizzle(queryClient);
-// export const migrationClient = drizzle(migrationConnection);
+export const migrationClient = old_drizzle(migrationConnection);
 
 import { drizzle } from 'drizzle-orm/vercel-postgres';
 import { sql } from '@vercel/postgres';
