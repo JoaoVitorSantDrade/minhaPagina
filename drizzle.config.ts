@@ -1,5 +1,4 @@
 import type { Config } from 'drizzle-kit';
-import 'dotenv/config';
 
 export default {
 	schema: './src/lib/db/schemas/*',
@@ -7,9 +6,9 @@ export default {
 	breakpoints: false,
 	driver: 'pg',
 	dbCredentials: {
-		database: process.env.POSTGRES_DATABASE!,
-		user: process.env.POSTGRES_USER,
-		password: process.env.POSTGRES_PASSWORD,
-		host: process.env.POSTGRES_HOST!
+		database: import.meta.env.POSTGRES_DATABASE,
+		user: import.meta.env.POSTGRES_USER,
+		password: import.meta.env.POSTGRES_PASSWORD,
+		host: import.meta.env.POSTGRES_HOST
 	}
 } satisfies Config;
