@@ -8,7 +8,7 @@
 
 <div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-16 py-2">
 	{#await data.projects}
-		{#each Array(6) as _}
+		{#each Array(2) as _}
 			<PlaceholderCard />
 		{/each}
 	{:then projects}
