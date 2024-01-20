@@ -1,6 +1,6 @@
 {
   "name": "minhapagina",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "private": true,
   "scripts": {
     "dev": "vite dev",
@@ -45,6 +45,7 @@
     "@floating-ui/dom": "1.5.4",
     "@vercel/postgres": "^0.5.1",
     "@vercel/speed-insights": "^1.0.5",
+    "dotenv": "^16.3.2",
     "drizzle-orm": "^0.29.3",
     "i18next": "^23.7.16",
     "postgres": "^3.4.3",

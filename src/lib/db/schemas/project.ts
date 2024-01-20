@@ -1,6 +1,6 @@
 import { relations } from 'drizzle-orm';
 import { primaryKey, text } from 'drizzle-orm/pg-core';
-import { integer, pgTable, serial, varchar } from 'drizzle-orm/pg-core';
+import { integer, pgView, pgTable, serial, varchar } from 'drizzle-orm/pg-core';
 
 export const technologies = pgTable('technologies', {
 	id: serial('id').primaryKey(),
@@ -50,3 +50,9 @@ export const projectsTechnologiesRelations = relations(projectsTechnologies, ({ 
 		references: [technologies.id]
 	})
 }));
+
+export const projectView = pgView('projectView').as((qb) => qb.select().from(projects));
+export const technologyView = pgView('technologyView').as((qb) => qb.select().from(technologies));
+export const projectTechnologyView = pgView('tech_projectView').as((qb) =>
+	qb.select().from(projectsTechnologies)
+);
